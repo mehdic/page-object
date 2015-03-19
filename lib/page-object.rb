@@ -68,6 +68,10 @@ module PageObject
     initialize_page if respond_to?(:initialize_page)
   end
 
+  def testModif
+    puts 'test'
+  end
+
   def initialize_browser(browser)
     @browser = browser
     include_platform_driver(browser)
